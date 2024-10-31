@@ -3,30 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Miku</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: rgb(117, 219, 228);
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #d8f3fa;
+        }
+        .navbar{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            background-color: #1f95b653;
+            position: relative; /* Make it stay on top */
+            z-index: 2;
+        }
+        .navigasi{
+            height: 100%;
+        }
+        .navigasi{
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Mencentral secara horizontal */
+            align-items: center; /* Mencentral secara vertikal */
+        }
+        
+        .navigasi ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 80px;
+        }
+        .navigasi li{
+            text-decoration: none;
+            display: inline;
+        }
+        .navigasi ul li a{
+            text-decoration: none;
+            color: #1e82ad;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .navigasi ul li a:hover{
+            color: #6ab5c3;
+        }
+
+        .content{
+            display: flex;
+            width: 100%;
+            height: 700px;
+        }
+        .left{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 80px;
+            color: #faf7f7;
+            z-index: 2; /* Supaya teks tetap di atas gambar */
+        }
+        .left h2{
+            margin-top: -10px;
+        }
+        .left p{
+            font-size: 20px;
+            font-weight: 300;
+            text-align: justify;
+            color: #1f4b64;
+            margin-top: 5px;
+        }
+        .left button{
+            padding: 15px 25px;
+            background-color: #49badf;
+            color: #eff6f9;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .left button:hover{
+            background-color: #437ca8;
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right img{
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .project{
+            width: 100%;
+            margin-top: 80px;
+        }
+        .project h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .card{
+            width: 30%;
+            padding: 20px;
+            margin: 20px;
+            background-color:#4b7b82 ;
+            border-radius: 10px;
+        }
+        .pembungkus-card{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-   <div class="navbar"></div> 
-        <div class=*icon*>
-            <img src="img/miku_expo.png" width="100%">
-        </div>
-            <div class=*icon*></div>
-        <div class=*navigasi*>
+    <div class="navbar">
+        <div class="navigasi">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Tokyo</li>
-                <li>Osaka</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </div>
-        <div class=*bahasa*></div>
-   </div>
-   <div class="content"></div>
-   <div class="footer"></div> 
+    </div>
+    <hr>
+    <div class="content">
+        <div class="left">
+            <h1 style="font-size: 37px;">Melysa Ayu Wulan Sari</h1>
+            <p>Saya adalah mahasiswa semester 1 di Teknik Informatika Universitas Jenderal Soedirman. Dengan minat yang besar pada teknologi dan pemrograman, saya berkomitmen untuk mempelajari dan mengembangkan keterampilan di bidang teknologi informasi. Saat ini, saya aktif dalam mengikuti perkuliahan dan beradaptasi dengan lingkungan akademik baru, sekaligus membangun dasar-dasar pengetahuan di bidang informatika.</p>
+            <a href="https://github.com/MelysaAyu"><button>Github</button></a>
+        </div>
+        <div class="right">
+            <img src="/img/melysa.png" width="300px" height="450px">
+        </div>
+    </div>
+    <hr>
+    <div class="project">
+        <h1>Tentang Saya</h1>
+        <div class="pembungkus-card">
+            <div class="card">
+                <h3>Data Diri</h3>
+                <p style="text-align: justify;">Nama: Melysa Ayu Wulan Sari</p>
+                <p style="text-align: justify;">NO. HP: 081325277590</p>
+                <p style="text-align: justify;">Email: melysaayu1509@gmail.com</p>
+                <p style="text-align: justify;">Program studi: S1 Teknik Informatika Universitas Jenderal Soedirman</p>
+                <p style="text-align: justify;">Pendidikan terakhir: SMAN 2 Purwokerto</p>
+
+            </div>
+            <div class="card">
+                <h3>Aktivitas Akademik</h3>
+                <p style="text-align: justify;">Perkuliahan Teknik Informatika : Mengikuti perkuliahan dengan aktif di setiap mata kuliah.</p>
+                <p style="text-align: justify;">Organisasi : Berencana untuk mengikuti organisasi mahasiswa sesuai minat, terutama yang dapat mendukung pengembangan ilmu pengetahuan dan teknologi informatika.</p>
+            </div>
+            <div class="card">
+                <h3>Tujuan Jangka Panjang</h3>
+                <p style="text-align: justify;">Menguasai bidang-bidang khusus dalam Teknik Informatika, seperti basis data atau pemrograman. Mengikuti kegiatan dan proyek di luar kelas untuk menambah keterampilan dan pengetahuan. Mengembangkan karier di bidang teknologi informasi, khususnya sebagai spesialis basis data atau software developer</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
